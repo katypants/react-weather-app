@@ -1,13 +1,35 @@
+:root {
+  --first-color: #0278ae;
+  --second-color: #51adcf;
+  --third-color: #a5ecd7;
+  --fourth-color: #e8ffc1;
+  --box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
 .Weather {
-  font-family: arial, sans-serif;
-  border: 1px solid #dadde1;
+  font-family: Verdana, sans-serif;
+  border: 1px solid var(--first-color);
   border-radius: 4px;
   padding: 16px;
-  color: rgb(135, 135, 135);
+  color: var(--third-color);
+  background: var(--second-color);
 }
 
 .Weather form {
   margin-bottom: 20px;
+}
+
+.Weather .form-control {
+  color: var(--first-color);
+  border: 1px solid var(--second-color);
+  box-shadow: var(--box-shadow);
+}
+
+.Weather .btn {
+  background: var(--first-color);
+  border: 1px solid var(--second-color);
+  color: var(--fourth-color);
+  box-shadow: var(--box-shadow);
 }
 
 .Weather h1 {
@@ -19,20 +41,21 @@
 
 .Weather canvas {
   margin-right: 10px auto;
+  color: var(--fourth-color);
 }
 
 .Weather .temperature {
   font-weight: 400;
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  color: var(--first-color);
+  font-size: 70px;
   line-height: 64px;
   margin-left: 10px;
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: var(--first-color);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   top: -32px;
   line-height: 1;
